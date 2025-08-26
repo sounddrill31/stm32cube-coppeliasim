@@ -2,7 +2,7 @@
 FROM docker.io/xanderhendriks/stm32cubeide:16.0
 
 # Install gdown and xz-utils for Google Drive download and tar.xz extraction
-RUN apt-get update && apt-get install -y python3-pip xz-utils && \
+RUN apt-get update && apt-get install -y python3-pip xz-utils libgl1-mesa-dev && \
     pip3 install --no-cache-dir gdown --break-system-packages && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 

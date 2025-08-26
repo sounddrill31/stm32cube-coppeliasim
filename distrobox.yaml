@@ -1,9 +1,0 @@
-stm32-coppelia:
-  image: "ghcr.io/sounddrill31/stm32cube-coppeliasim:latest"
-  pull: true
-  replace: true
-  start_now: false
-  exported_bins:
-    - coppeliasim
-  exported_bins_path: "$HOME/.local/bin"
-  entry: true
