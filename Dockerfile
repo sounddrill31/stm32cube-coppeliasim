@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM docker.io/xanderhendriks/stm32cubeide:latest
+FROM docker.io/xanderhendriks/stm32cubeide:16.0
 
 # Install gdown and xz-utils for Google Drive download and tar.xz extraction
 RUN apt-get update && apt-get install -y python3-pip xz-utils && \
